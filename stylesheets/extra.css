@@ -1,5 +1,5 @@
 .md-grid {
-  max-width: 1600px;
+  max-width: 1400px;
 }
 
 .md-typeset {
@@ -9,4 +9,8 @@
 
 .md-typeset ul li {
   margin-bottom: 0;
+}
+
+.md-nav {
+  font-size: 0.65rem;
 }
