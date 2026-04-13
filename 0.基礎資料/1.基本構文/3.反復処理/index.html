@@ -23,7 +23,7 @@
     
     
       
-        <title>反復 - education</title>
+        <title>反復処理 - education</title>
       
     
     
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              反復
+              反復処理
             
           </span>
         </div>
@@ -392,7 +392,7 @@
   <span class="md-ellipsis">
     
   
-    1.プログラム言語とは
+    プログラム言語とは
   
 
     
@@ -533,7 +533,7 @@
   <span class="md-ellipsis">
     
   
-    分岐
+    分岐処理
   
 
     
@@ -570,7 +570,7 @@
   <span class="md-ellipsis">
     
   
-    反復
+    反復処理
   
 
     
@@ -588,7 +588,7 @@
   <span class="md-ellipsis">
     
   
-    反復
+    反復処理
   
 
     
@@ -4091,7 +4091,7 @@
 
 
 
-<h1 id="_1"><strong>反復</strong></h1>
+<h1 id="_1"><strong>反復処理</strong></h1>
 <hr />
 <h2 id="_2"><strong>反復処理とは</strong></h2>
 <p>分岐処理を利用して数当てゲームを作成した。<br />
@@ -4164,14 +4164,14 @@
 <a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">}</span>
 </code></pre></div>
-<p><code>while</code> は<span style ="color: red;"><strong>指定した条件でカギカッコの処理を繰り返す</strong></span>キーワード。<br />
-<code>()</code> の中に記述した条件が <code>true</code> である限り、カギカッコ内の処理を繰り返す。<br />
+<p><code>while</code> は<span style ="color: red;"><strong>指定した条件で波かっこの処理を繰り返す</strong></span>キーワード。<br />
+<code>()</code> の中に記述した条件が <code>true</code> である限り、波かっこ内の処理を繰り返す。<br />
 条件の書き方は <code>if 文</code> と全く同じ。</p>
 <p>各行の意味を整理すると、以下のようになる。</p>
 <ul>
 <li><span style ="color: red;"><strong><code>while(count &lt; 100)</code></strong></span><ul>
 <li><code>count</code> が 100 より小さければ <code>true</code>、100 以上なら <code>false</code></li>
-<li><code>true</code> の間、カギカッコ内を繰り返す</li>
+<li><code>true</code> の間、波かっこ内を繰り返す</li>
 </ul>
 </li>
 <li><span style ="color: red;"><strong><code>printf(...)</code></strong></span><ul>
@@ -4185,7 +4185,7 @@
 </li>
 </ul>
 <p>日本語に翻訳すると、<br />
-「変数 <code>count</code> が 100 より小さい場合、カギカッコの処理を繰り返す」<br />
+「変数 <code>count</code> が 100 より小さい場合、波かっこの処理を繰り返す」<br />
 という意味になる。<br />
 この書き方を <span style ="color: red;"><strong>while 文</strong></span> という。</p>
 <h3 id="_5"><strong>無限ループに注意</strong></h3>
@@ -4215,22 +4215,22 @@
 <tbody>
 <tr>
 <td>while 文</td>
-<td>カギカッコの処理より先</td>
+<td>波かっこの処理より先</td>
 <td>条件が最初から false なら一度も実行されない</td>
 </tr>
 <tr>
 <td>do while 文</td>
-<td>カギカッコの処理の後</td>
+<td>波かっこの処理の後</td>
 <td>必ず最低 1 回は実行される</td>
 </tr>
 </tbody>
 </table>
 <p>日本語に翻訳すると、<br />
-「カギカッコの処理を行った後、変数 <code>count</code> が 100 より小さかった場合は繰り返す」<br />
+「波かっこの処理を行った後、変数 <code>count</code> が 100 より小さかった場合は繰り返す」<br />
 という意味になる。</p>
 <h3 id="_6"><strong>反復処理の考え方</strong></h3>
 <p>一見すると「処理が戻っている」ように見えるが、<br />
-反復処理はカギカッコの中を常に上から順に処理し、<br />
+反復処理は波かっこの中を常に上から順に処理し、<br />
 それをルールに則って一定数繰り返しているのみ。</p>
 <p>「戻る」のではなく「もう一度、上から順に処理している」という認識を持つこと。<br />
 <strong>処理位置が戻ったとしても、それまでの処理が無かったことになるわけではない</strong>。</p>
@@ -4244,7 +4244,7 @@
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;現在のcount は %d です</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
 <a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">}</span>
 </code></pre></div>
-<p><code>for</code> も<span style ="color: red;"><strong>指定した条件でカギカッコの処理を繰り返す</strong></span>キーワード。<br />
+<p><code>for</code> も<span style ="color: red;"><strong>指定した条件で波かっこの処理を繰り返す</strong></span>キーワード。<br />
 <code>while</code> とは記述が異なるが、同じく反復処理を実現できる。  </p>
 <p><code>for</code> に続く <code>()</code> の中はセミコロン 2 つで 3 つに区切られており、<br />
 それぞれ以下の役割を持つ。</p>
@@ -4270,17 +4270,17 @@
 <tr>
 <td>3 つ目</td>
 <td><code>count = count + 1</code></td>
-<td>更新。カギカッコの処理が終わるたびに実行される</td>
+<td>更新。波かっこの処理が終わるたびに実行される</td>
 </tr>
 </tbody>
 </table>
 <p>日本語に翻訳すると、<br />
 「変数 <code>count</code> が 0 から始まり、<code>count</code> が 100 より小さい間、<br />
-カギカッコの処理を繰り返しながら、<code>count</code> に 1 ずつ足し続ける」<br />
+波かっこの処理を繰り返しながら、<code>count</code> に 1 ずつ足し続ける」<br />
 この書き方を <span style ="color: red;"><strong>for 文</strong></span> という。</p>
 <h3 id="_8"><strong>さまざまな書き方</strong></h3>
 <p><code>for 文</code> は省略による様々な書き方ができる。以下はその一例。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// 更新部分を省略し、カギカッコ内でインクリメントする</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">// 更新部分を省略し、波かっこ内でインクリメントする</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">for</span><span class="p">(</span><span class="n">count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">count</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="cm">/*なし*/</span><span class="p">)</span>
 <a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">{</span>
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;現在のcount は %d です</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
@@ -4305,7 +4305,7 @@
 <a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;現在のcount は %d です</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">count</span><span class="p">);</span>
 <a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="p">}</span>
 </code></pre></div>
-<p><code>for 文</code> 内で宣言した変数は、カギカッコ内でそのまま利用できる。</p>
+<p><code>for 文</code> 内で宣言した変数は、波かっこ内でそのまま利用できる。</p>
 <hr />
 <h2 id="_9"><strong>中断処理</strong></h2>
 <h3 id="break"><strong>break による強制終了</strong></h3>
