@@ -3,8 +3,7 @@
 }
 
 .md-typeset {
-  font-size: 0.75rem;
-  line-height: 1.4;
+  font-size: 0.7rem;
 }
 
 .md-typeset ul li {
@@ -13,4 +12,30 @@
 
 .md-nav {
   font-size: 0.65rem;
+}
+
+.md-typeset h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: var(--md-code-bg-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;  
+}
+
+.md-typeset h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--md-accent-fg-color);
+  padding-bottom: 0.2rem;
+}
+
+.md-typeset h3 {
+  margin-top: 1.1rem;
+  margin-bottom: 0.1rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding-left: 0.5rem;  
+}
+
+.md-typeset h3 + p {
+  margin-block-start: 0.2em;
 }
