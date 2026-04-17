@@ -4136,7 +4136,7 @@
 <li>プログラム全体で一つのみ存在する領域に保存される。  </li>
 </ul>
 </li>
-<li><span style="color: red;"><strong>静的メソッド <code>GetInstance()</code> で唯一のインスタンスを返す</strong></span><ul>
+<li><span style="color: red;"><strong>静的関数 <code>GetInstance()</code> で唯一のインスタンスを返す</strong></span><ul>
 <li>初回呼び出し時だけ生成し、以降は同じインスタンスを返す。</li>
 </ul>
 </li>
@@ -4150,7 +4150,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">SoundManager</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">{</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">public</span><span class="o">:</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="c1">// 唯一のインスタンスを返す静的メソッド</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="c1">// 唯一のインスタンスを返す静的関数</span>
 <a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">SoundManager</span><span class="o">*</span><span class="w"> </span><span class="n">GetInstance</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">instance</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nb">nullptr</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="n">instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">SoundManager</span><span class="p">();</span>
@@ -4291,7 +4291,7 @@
 </tr>
 <tr>
 <td>手段</td>
-<td>コンストラクタの <code>private</code> 化 ＋ 静的メソッドによるアクセス</td>
+<td>コンストラクタの <code>private</code> 化 ＋ 静的関数によるアクセス</td>
 </tr>
 <tr>
 <td>推奨実装</td>
