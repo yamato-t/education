@@ -2,3 +2,4 @@ site/
 docs.code-workspace
 text_format.md
 CLAUDE.md
+.claude/
